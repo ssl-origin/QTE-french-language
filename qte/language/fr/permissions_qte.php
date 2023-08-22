@@ -35,12 +35,13 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'ACL_A_ATTR_MANAGE' 	=> 'Peut gérer les attributs de sujet.',
 
-	'ACL_M_QTE_ATTR_DELETE'		=> 'Peut supprimer des attributs.',
 	'ACL_M_QTE_ATTR_EDIT'		=> 'Peut changer d’attributs.',
+	'ACL_M_QTE_ATTR_DELETE'		=> 'Peut supprimer des attributs.',
+
 	'ACL_CAT_QTE'			=> 'QTE',
 
 	'QTE_CAN_USE_ATTR'	=> 'Peut utiliser l‘attribut %s',
-));
+]);

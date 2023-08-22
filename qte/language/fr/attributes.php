@@ -35,10 +35,8 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, array(
-	'QTE_CAN_USE_ATTR'	=> 'Peut utiliser l’attribut %s',
-
-	// select
+$lang = array_merge($lang, [
+	// Select
 	'QTE_ATTRIBUTES' => 'Attributs de sujet',
 	'QTE_ATTRIBUTE' => 'Attribut de sujet',
 
@@ -47,7 +45,7 @@ $lang = array_merge($lang, array(
 	'QTE_ATTRIBUTE_DESIRED' => 'Sélectionner l’attribut désiré',
 	'QTE_ATTRIBUTE_KEEP' => 'Conserver l’attribut actuel',
 
-	// notifications
+	// Notifications
 	'QTE_ATTRIBUTE_ADDED' => 'Un attribut a été appliqué au titre du sujet',
 	'QTE_ATTRIBUTE_UPDATED' => 'L’attribut de ce sujet a été mis à jour',
 	'QTE_ATTRIBUTE_REMOVED' => 'L’attribut du sujet a été supprimé',
@@ -56,28 +54,27 @@ $lang = array_merge($lang, array(
 	'QTE_TOPICS_ATTRIBUTE_ADDED' => 'Un attribut a été appliqué aux sujets sélectionnés',
 	'QTE_TOPIC_ATTRIBUTE_UPDATED' => 'L’attribut du sujet sélectionné a été mis à jour',
 	'QTE_TOPICS_ATTRIBUTE_UPDATED' => 'L’attribut des sujets sélectionnés a été mis à jour',
-	'QTE_TOPIC_ATTRIBUTE_REMOVED' => 'L’attribut du sujet sélectionné a été supprimé',
-	'QTE_TOPICS_ATTRIBUTE_REMOVED' => 'L’attribut des sujets sélectionnés a été supprimé',
+	'QTE_TOPIC_ATTRIBUTE_DELETED' => 'L’attribut du sujet sélectionné a été supprimé',
+	'QTE_TOPICS_ATTRIBUTE_DELETED' => 'L’attribut des sujets sélectionnés a été supprimé',
 
-	// search
+	// Search
 	'QTE_ATTRIBUTE_SELECT' => 'Sélectionner un attribut',
+
 	'QTE_ATTRIBUTE_SEARCH' => 'Recherche par attribut',
 	'QTE_ATTRIBUTE_SEARCH_EXPLAIN' => 'Sélectionnez l’attribut que vous souhaitez rechercher',
 
-	// sort
+	// Sort
 	'QTE_SORT' => 'Selon l’attribut',
 	'QTE_ALL' => 'Tous',
 
-	// mistake messages
+	// ERRORS
 	'QTE_ATTRIBUTE_UNSELECTED' => 'Vous devez sélectionner un attribut !',
 
-	// placeholders
+	// Placeholders
 	'QTE_KEY_USERNAME' => '¦utilisateur¦',
 	'QTE_KEY_DATE' => '¦date¦',
-));
 
-// topic attributes as keys
-$lang = array_merge($lang, array(
+// Topic attributes as keys
 	'QTE_SOLVED' => '[Réglé par %mod% :: %date%]',
 	'QTE_CANCELLED' => 'Annulé',
-));
+]);

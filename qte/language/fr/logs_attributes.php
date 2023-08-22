@@ -35,9 +35,8 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-// moderation
-$lang = array_merge($lang, array(
-	// logs
+$lang = array_merge($lang, [
+	// Logs
 	'LOG_ATTRIBUTE_ADDED' => '<strong>Ajout d’un nouvel attribut</strong><br />» %s',
 	'LOG_ATTRIBUTE_UPDATED' => '<strong>Mise à jour d’un attribut</strong><br />» %s',
 	'LOG_ATTRIBUTE_REMOVED'	=> '<strong>Suppression d’un attribut</strong><br />» %s',
@@ -46,5 +45,5 @@ $lang = array_merge($lang, array(
 
 	'MCP_ATTRIBUTE_ADDED' => '<strong>Ajout d’un attribut à un sujet</strong><br />» %s',
 	'MCP_ATTRIBUTE_UPDATED' => '<strong>Mise à jour de l’attribut du sujet</strong><br />» %s',
-	'MCP_ATTRIBUTE_REMOVED'	=> '<strong>Suppression de l’attribut du sujet</strong><br />» %s',
-));
+	'MCP_ATTRIBUTE_DELETED'	=> '<strong>Suppression de l’attribut du sujet</strong><br />» %s',
+]);
